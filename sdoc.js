@@ -39,14 +39,14 @@ device.sdo
     serverId: serverId,
     data: date.toString(),
     dataType: DataType.VISIBLE_STRING,
-    index: 0x2000,
+    index: 0x6200,
     blockTransfer: true,
   })
   .then(() => {
     return device.sdo.upload({
       serverId: serverId,
       dataType: DataType.VISIBLE_STRING,
-      index: 0x2000,
+      index: 0x6200,
       blockTransfer: true,
     });
   })

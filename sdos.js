@@ -32,7 +32,7 @@ channel.start();
 device.sdoServer.addClient(clientId);
 
 // Step 5: Create an additional entry to be accessed by the SDO client.
-device.eds.addEntry(0x2000, {
+device.eds.addEntry(0x6200, {
   parameterName: 'Test string',
   objectType: ObjectType.VAR,
   dataType: DataType.VISIBLE_STRING,
@@ -40,7 +40,7 @@ device.eds.addEntry(0x2000, {
 });
 
 // Step 6: Register a callback to print changes to 0x2000.
-const obj2000 = device.eds.getEntry(0x2000);
-obj2000.addListener('update', (data) => console.log(data.value));
+const obj6200 = device.eds.getEntry(0x6200);
+obj6200.addListener('update', (data) => console.log(data.value));
 
 console.log('Press Ctrl-C to quit');
