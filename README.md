@@ -19,3 +19,26 @@ sudo apt install can-utils
 ```
 candump can0
 ```
+
+### 使用方式
+#### PDO消息观察
+开两个终端 
+终端1：
+```
+node rpdo.js
+```
+终端2：
+```
+node tpdo.js
+```
+
+#### SDO消息观察
+开两个终端
+终端1：
+```
+node sdos.js
+```
+终端2：
+```
+node sdoc.js
+```
