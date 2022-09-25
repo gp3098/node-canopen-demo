@@ -1,0 +1,16 @@
+{
+  "name": "node-canopen-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "gp3098",
+  "license": "ISC",
+  "dependencies": {
+		"canopen": "^5.0.8",
+		"socketcan": "^3.0.0"
+  }
+}
